@@ -12,16 +12,16 @@
 	        <div class="field">
 	          <div class="ui left icon input">
 	            <i class="user icon"></i>
-	            <input type="text" name="email" placeholder="E-mail address">
+	            <input v-model="email" type="text" name="email" placeholder="E-mail address">
 	          </div>
 	        </div>
 	        <div class="field">
 	          <div class="ui left icon input">
 	            <i class="lock icon"></i>
-	            <input type="password" name="password" placeholder="Password">
+	            <input v-model="password" type="password" name="password" placeholder="Password">
 	          </div>
 	        </div>
-	        <div class="ui fluid large teal submit button">Login</div>
+	        <div @click="login" class="ui fluid large teal submit button">Login</div>
 	      </div>
 	      <div class="ui error message"></div>
 	    </form>
@@ -33,7 +33,31 @@
 </template>
 <script>
 	export default {
-  		name: 'login'
+  		name: 'login',
+  		data() {
+  			return {
+  				email: '',
+  				password: ''
+  			}
+  		},
+  		methods: {
+  			login() {
+  				var data = {
+  					client_id: 2,
+  					client_secret: 'GloulJuUFMxEA4jjkebGjAmf0qp3FMqmK5t5xgm8',
+  					grant_type: 'password',
+  					username: this.email,
+  					password: this.password
+  				}
+
+  				console.log(data);
+
+  				this.$http.post('http://localhost:5512/oauth/token', data)
+  				.then(function(response) {
+  					console.log(response)
+  				})
+  			}
+  		}
 	}
 </script>
 <style>
