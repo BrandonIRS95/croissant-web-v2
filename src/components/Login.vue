@@ -42,6 +42,7 @@
   		},
   		methods: {
   			login() {
+  				var self = this;
   				var data = {
   					client_id: 2,
   					client_secret: 'GloulJuUFMxEA4jjkebGjAmf0qp3FMqmK5t5xgm8',
@@ -50,11 +51,10 @@
   					password: this.password
   				}
 
-  				console.log(data);
-
   				this.$http.post('http://localhost:5512/oauth/token', data)
   				.then(function(response) {
-  					console.log(response)
+  					self.$auth.setToken(response.data.access_token, response.data.expires_in + Date.now())
+  					self.$router.push('/home')
   				})
   			}
   		}
