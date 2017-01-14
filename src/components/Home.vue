@@ -1,26 +1,85 @@
 <template>
-	<div class="ui stackable grid">
-		<div class="stretched row">
-		<div class="thirteen wide column no-padding-right">
-			<div id="top-conference">
-				<div class="ui labeled button" tabindex="0">
-					<div class="ui red button">
-						<i class="unhide icon"></i> Viewers
+	
+	<div class="row" style="position: relative;">
+		<div id="top-conference">
+			<div class="ui red inverted label">
+				<i class="unhide icon"></i> Viewers
+				<div class="detail">1,901</div>
+			</div>
+		</div>
+		<img class="ui fluid image" src="~src/images/slide_conference.jpg">
+		<div id="info">
+			<div class="ui right aligned inverted basic padded segment" style="background-color: rgba(0,0,0,0.6); height: 100%;">
+				<h2 class="ui inverted header">
+					<div class="content">
+						Loremp Ipsum Dolor
+						<div class="sub header">By Maximilian Bradtke</div>
 					</div>
-					<a class="ui basic red left pointing label">
-						1,048
-					</a>
+				</h2>
+				<div class="ui divider"></div>
+				<p>Morbi mauris ante...</p>
+				<h5>Top Locations</h5>
+				<div class="ui list">
+				  <div class="item">
+					  <div class="right aligned">
+					    <div class="content">
+					      United Kingdom
+					      <i class="gb flag"></i>
+					      <div class="ui label">
+							  <i class="unhide icon"></i> 290
+							</div>
+					    </div>
+					  </div>
+				  </div>
+				  <div class="item">
+					  <div class="right aligned">
+					    <div class="content">
+					      M&eacute;xico
+					      <i class="mx flag"></i>
+					      <div class="ui label">
+							  <i class="unhide icon"></i> 199
+							</div>
+					    </div>
+					  </div>
+				  </div>
+				  <div class="item">
+					  <div class="right aligned">
+					    <div class="content">
+					      USA
+					      <i class="us flag"></i>
+					      <div class="ui label">
+							  <i class="unhide icon"></i> 132
+							</div>
+					    </div>
+					  </div>
+				  </div>
+				  <div class="item">
+					  <div class="right aligned">
+					    <div class="content">
+					      Canada
+					      <i class="ca flag"></i>
+					      <div class="ui label">
+							  <i class="unhide icon"></i> 97
+							</div>
+					    </div>
+					  </div>
+				  </div>
+				  <div class="item">
+					  <div class="right aligned">
+					    <div class="content">
+					      France
+					      <i class="france flag"></i>
+					      <div class="ui label">
+							  <i class="unhide icon"></i> 60
+							</div>
+					    </div>
+					  </div>
+				  </div>
 				</div>
 			</div>
-			<img class="ui fluid image" src="~src/images/slide_conference.jpg">
-		</div>
-		<div class="three wide column no-padding-left">
-	      <div class="ui red inverted attached segment"></div>
-	      <div class="ui red inverted attached segment"></div>
-	      <div class="ui red inverted attached segment"></div>
-		</div>
 		</div>
 	</div>
+	
 </template>
 <script>
 	export default {
@@ -31,14 +90,18 @@
 <style>
 	#top-conference {
 		position: absolute;
-		top: 15px;
-		left: 30px;
+		margin-top: 15px;
+		margin-left: 15px;
 		z-index: 10;
 	}
 
 	#info {
-		display: flex;
+		position: absolute;
+		top:0;
+		right: 0;
+		height: 100%;
+		/*display: flex;
 		flex-direction: column; 
-		justify-content: space-between;
+		justify-content: space-between;*/
 	}
 </style>
