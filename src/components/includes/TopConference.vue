@@ -2,7 +2,7 @@
 	<div class="row" style="position: relative;">
 		<div id="top-conference">
 			<div class="ui red inverted label">
-				<i class="unhide icon"></i> Viewers
+				<i class="unhide icon"></i> Live
 				<div class="detail">1,901</div>
 			</div>
 		</div>

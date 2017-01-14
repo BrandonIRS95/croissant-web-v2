@@ -1,8 +1,16 @@
 <template>
 	<div>
 		<TopConference></TopConference>
-		<div class="ui attached padded segment">
-			<h3>Trends</h3>
+		<div class="ui attached padded clearing segment">
+			<div class="ui right floated icon buttons" style="margin-left: 5px;">
+			  <button class="ui button"><i class="sort content ascending icon"></i></button>
+			  <button class="ui button"><i class="sort content descending icon"></i></button>
+			</div>
+			<div class="ui right floated icon buttons">
+			  <button class="ui button"><i class="heart icon"></i></button>
+			  <button class="ui button"><i class="unhide icon"></i></button>
+			</div>
+			<h1 class="ui left floated header">Trends</h1>
 		</div>
 		<div class="ui attached segment">
 			<div class="ui three stackable cards">
