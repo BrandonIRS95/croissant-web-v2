@@ -3,13 +3,13 @@
 </template>
 
 <script>
-	import './semantic/dist/semantic.css'
-	import Login from './components/Login'
+	import './semantic/dist/semantic.min.css'
+	import MenuBar from './components/includes/Menu'
 
 	export default {
 		name: 'app',
 		components: {
-			Login
+			MenuBar
 		}
 	}
 </script>

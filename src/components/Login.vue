@@ -1,6 +1,6 @@
 <template>
-	<div class="ui middle aligned center aligned grid">
-		<div class="column">
+	<div class="ui middle aligned center aligned grid" style="height: 100%;">
+		<div class="column" style="max-width: 450px;">
 	    <h2 class="ui teal image header">
 	      <img src="~src/icons/logo-small.png" class="image">
 	      <div class="content">
@@ -60,12 +60,4 @@
   		}
 	}
 </script>
-<style>
-	body > .grid {
-		height: 100%;
-	}
-
-	.column {
-		max-width: 450px;
-	}
-</style>
+<style></style>
