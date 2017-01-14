@@ -1,128 +1,144 @@
 <template>
-	
-	<div class="row" style="position: relative;">
-		<div id="top-conference">
-			<div class="ui red inverted label">
-				<i class="unhide icon"></i> Viewers
-				<div class="detail">1,901</div>
-			</div>
+	<div>
+		<TopConference></TopConference>
+		<div class="ui attached padded segment">
+			<h3>Trends</h3>
 		</div>
-		<img class="ui fluid image" src="~src/images/slide_conference.jpg">
-		<div id="info">
-			<div class="ui right aligned inverted basic padded segment" style="background-color: rgba(0,0,0,0.6); height: 100%;">
-				<h2 class="ui inverted header">
+		<div class="ui attached segment">
+			<div class="ui three stackable cards">
+				<div class="card">
+					<div class="image">
+						<img src="~src/images/wireframe_image.png">
+					</div>
 					<div class="content">
-						Loremp Ipsum Dolor
-						<div class="sub header">By Maximilian Bradtke</div>
-					</div>
-				</h2>
-				<div class="ui divider"></div>
-				<p>Morbi mauris ante...</p>
-				<h5>Top Locations</h5>
-				<div class="ui list">
-					<div class="item">
-						<div class="right aligned">
-							<div class="content">
-								United Kingdom
-								<i class="gb flag"></i>
-								<div class="ui label">
-									<i class="unhide icon"></i> 290
-								</div>
-							</div>
+						<div class="header">Lorem Ipsum</div>
+						<div class="meta">
+							<a>By Jaylen Lang</a>
+						</div>
+						<div class="description">
+							Aenean velit turpis, finibus eu purus non, ultricies egestas elit.
 						</div>
 					</div>
-					<div class="item">
-						<div class="right aligned">
-							<div class="content">
-								M&eacute;xico
-								<i class="mx flag"></i>
-								<div class="ui label">
-									<i class="unhide icon"></i> 199
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="right aligned">
-							<div class="content">
-								USA
-								<i class="us flag"></i>
-								<div class="ui label">
-									<i class="unhide icon"></i> 132
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="right aligned">
-							<div class="content">
-								Canada
-								<i class="ca flag"></i>
-								<div class="ui label">
-									<i class="unhide icon"></i> 97
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="right aligned">
-							<div class="content">
-								France
-								<i class="france flag"></i>
-								<div class="ui label">
-									<i class="unhide icon"></i> 60
-								</div>
-							</div>
-						</div>
+					<div class="extra content">
+						<span class="right floated">
+							<i class="unhide icon"></i>
+							959
+						</span>
+						<span>
+							<i class="heart icon"></i>
+							390
+						</span>
 					</div>
 				</div>
-				<div id="join-button">
-					<button class="positive ui button">JOIN</button>
+				<div class="card">
+					<div class="image">
+						<img src="~src/images/wireframe_image.png">
+					</div>
+					<div class="content">
+						<div class="header">Lorem Ipsum</div>
+						<div class="meta">
+							<a>By Jaylen Lang</a>
+						</div>
+						<div class="description">
+							Aenean velit turpis, finibus eu purus non, ultricies egestas elit.
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							<i class="unhide icon"></i>
+							959
+						</span>
+						<span>
+							<i class="heart icon"></i>
+							390
+						</span>
+					</div>
 				</div>
-			</div>
-		</div>
-		<div id="like-button">
-			<div class="ui labeled button" tabindex="0">
-				<div class="ui red button">
-					<i class="heart icon"></i> Like
+				<div class="card">
+					<div class="image">
+						<img src="~src/images/wireframe_image.png">
+					</div>
+					<div class="content">
+						<div class="header">Lorem Ipsum</div>
+						<div class="meta">
+							<a>By Jaylen Lang</a>
+						</div>
+						<div class="description">
+							Aenean velit turpis, finibus eu purus non, ultricies egestas elit.
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							<i class="unhide icon"></i>
+							959
+						</span>
+						<span>
+							<i class="heart icon"></i>
+							390
+						</span>
+					</div>
 				</div>
-				<a class="ui basic red left pointing label">
-					1,048
-				</a>
+				<div class="card">
+					<div class="image">
+						<img src="~src/images/wireframe_image.png">
+					</div>
+					<div class="content">
+						<div class="header">Lorem Ipsum</div>
+						<div class="meta">
+							<a>By Jaylen Lang</a>
+						</div>
+						<div class="description">
+							Aenean velit turpis, finibus eu purus non, ultricies egestas elit.
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							<i class="unhide icon"></i>
+							959
+						</span>
+						<span>
+							<i class="heart icon"></i>
+							390
+						</span>
+					</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="~src/images/wireframe_image.png">
+					</div>
+					<div class="content">
+						<div class="header">Lorem Ipsum</div>
+						<div class="meta">
+							<a>By Jaylen Lang</a>
+						</div>
+						<div class="description">
+							Aenean velit turpis, finibus eu purus non, ultricies egestas elit.
+						</div>
+					</div>
+					<div class="extra content">
+						<span class="right floated">
+							<i class="unhide icon"></i>
+							959
+						</span>
+						<span>
+							<i class="heart icon"></i>
+							390
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	
 </template>
 <script>
+	import TopConference from './includes/TopConference'
+
 	export default {
-		name: 'home'
+		name: 'home',
+		components: {
+			TopConference
+		}
 	}
 </script>
 
-<style>
-	#top-conference {
-		position: absolute;
-		margin-top: 20px;
-		margin-left: 20px;
-		z-index: 10;
-	}
-
-	#info {
-		position: absolute;
-		top:0;
-		right: 0;
-		height: 100%;
-		/*display: flex;
-		flex-direction: column; 
-		justify-content: space-between;*/
-	}
-
-	#like-button, #join-button {
-		position: absolute;
-		left: 50%;
-		bottom: 20px;
-		transform: translateX(-50%);
-	}
-
-</style>
+<style></style>
