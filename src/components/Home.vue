@@ -20,62 +20,75 @@
 				<p>Morbi mauris ante...</p>
 				<h5>Top Locations</h5>
 				<div class="ui list">
-				  <div class="item">
-					  <div class="right aligned">
-					    <div class="content">
-					      United Kingdom
-					      <i class="gb flag"></i>
-					      <div class="ui label">
-							  <i class="unhide icon"></i> 290
+					<div class="item">
+						<div class="right aligned">
+							<div class="content">
+								United Kingdom
+								<i class="gb flag"></i>
+								<div class="ui label">
+									<i class="unhide icon"></i> 290
+								</div>
 							</div>
-					    </div>
-					  </div>
-				  </div>
-				  <div class="item">
-					  <div class="right aligned">
-					    <div class="content">
-					      M&eacute;xico
-					      <i class="mx flag"></i>
-					      <div class="ui label">
-							  <i class="unhide icon"></i> 199
+						</div>
+					</div>
+					<div class="item">
+						<div class="right aligned">
+							<div class="content">
+								M&eacute;xico
+								<i class="mx flag"></i>
+								<div class="ui label">
+									<i class="unhide icon"></i> 199
+								</div>
 							</div>
-					    </div>
-					  </div>
-				  </div>
-				  <div class="item">
-					  <div class="right aligned">
-					    <div class="content">
-					      USA
-					      <i class="us flag"></i>
-					      <div class="ui label">
-							  <i class="unhide icon"></i> 132
+						</div>
+					</div>
+					<div class="item">
+						<div class="right aligned">
+							<div class="content">
+								USA
+								<i class="us flag"></i>
+								<div class="ui label">
+									<i class="unhide icon"></i> 132
+								</div>
 							</div>
-					    </div>
-					  </div>
-				  </div>
-				  <div class="item">
-					  <div class="right aligned">
-					    <div class="content">
-					      Canada
-					      <i class="ca flag"></i>
-					      <div class="ui label">
-							  <i class="unhide icon"></i> 97
+						</div>
+					</div>
+					<div class="item">
+						<div class="right aligned">
+							<div class="content">
+								Canada
+								<i class="ca flag"></i>
+								<div class="ui label">
+									<i class="unhide icon"></i> 97
+								</div>
 							</div>
-					    </div>
-					  </div>
-				  </div>
-				  <div class="item">
-					  <div class="right aligned">
-					    <div class="content">
-					      France
-					      <i class="france flag"></i>
-					      <div class="ui label">
-							  <i class="unhide icon"></i> 60
+						</div>
+					</div>
+					<div class="item">
+						<div class="right aligned">
+							<div class="content">
+								France
+								<i class="france flag"></i>
+								<div class="ui label">
+									<i class="unhide icon"></i> 60
+								</div>
 							</div>
-					    </div>
-					  </div>
-				  </div>
+						</div>
+					</div>
 				</div>
+				<div id="join-button">
+					<button class="positive ui button">JOIN</button>
+				</div>
+			</div>
+		</div>
+		<div id="like-button">
+			<div class="ui labeled button" tabindex="0">
+				<div class="ui red button">
+					<i class="heart icon"></i> Like
+				</div>
+				<a class="ui basic red left pointing label">
+					1,048
+				</a>
 			</div>
 		</div>
 	</div>
@@ -90,8 +103,8 @@
 <style>
 	#top-conference {
 		position: absolute;
-		margin-top: 15px;
-		margin-left: 15px;
+		margin-top: 20px;
+		margin-left: 20px;
 		z-index: 10;
 	}
 
@@ -104,4 +117,12 @@
 		flex-direction: column; 
 		justify-content: space-between;*/
 	}
+
+	#like-button, #join-button {
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+		transform: translateX(-50%);
+	}
+
 </style>
