@@ -14,6 +14,14 @@
 	}
 </script>
 <style>
+	body { 
+	  background: url('../images/background.jpg') no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+
 	.no-margin-left {
 		margin-left: 0!important;
 	}

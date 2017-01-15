@@ -1,11 +1,20 @@
 <template>
-	<div class="ui attached stackable menu">
+	<div class="ui top attached huge stackable menu">
 		<div class="item">
 			<img src="~src/icons/logo-small.png">
 		</div>
-		<a class="item">Home</a>
-		<a class="item">Suscriptions</a>
-		<a class="item">Categories</a>
+		<a class="item">
+			<i class="home icon"></i>
+			Home
+		</a>
+		<a class="item">
+			<i class="share alternate icon"></i>
+			Subscriptions
+		</a>
+		<a class="item">
+			<i class="list layout icon"></i>
+			Categories
+		</a>
 		<div class="right menu">
 			<div class="ui item">
 				<div class="ui icon input">
