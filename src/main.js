@@ -11,6 +11,7 @@ Vue.use(VueRouter)
 Vue.use(Auth)
 
 const router = new VueRouter({
+	linkActiveClass: 'active',
 	routes
 })
 

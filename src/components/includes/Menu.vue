@@ -3,10 +3,10 @@
 		<div class="item">
 			<img src="~src/icons/logo-small.png">
 		</div>
-		<a class="item">
+		<router-link to="/home" class="item">
 			<i class="home icon"></i>
 			Home
-		</a>
+		</router-link tag="div" >
 		<a class="item">
 			<i class="share alternate icon"></i>
 			Subscriptions

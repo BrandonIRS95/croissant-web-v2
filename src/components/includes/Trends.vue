@@ -9,7 +9,12 @@
 				<button class="ui button"><i class="heart icon"></i></button>
 				<button class="ui button"><i class="unhide icon"></i></button>
 			</div>
-			<h1 class="ui left floated header">Trends</h1>
+			<h2 class="ui left floated header">
+				<i class="line chart icon"></i>
+				<div class="content">
+					Trends
+				</div>
+			</h2>
 		</div>
 		<div class="ui bottom attached secondary segment">
 			<div class="ui three stackable cards">
